@@ -17,7 +17,7 @@ seja ele inteiro, prossegue o programa, senão, o system out na linha 20.
 * Ainda me confundo sobre eles, portanto acho interessante tentar explicar tanto para mim como para o exercício em si.
 ----
 1. (**=**) atribui o valor da *direita* para a variável à *esquerda*, ou seja, se copia o valor para a outra.
-![img.png](img.png)
+![image](https://github.com/user-attachments/assets/4818c1ec-d85e-4c4d-a593-68508f4ee1da)
 ------
 2. (**==**) Fundamentalmente compara de fato os valores especificos na memória. Em casos de objeto, a comparação é feita
 no endereço de memória
