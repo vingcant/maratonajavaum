@@ -2,7 +2,7 @@ package exercicios.domain;
 
 import java.util.Scanner;
 
-public class findNumInt {
+public class FindNumInt {
     Scanner input = new Scanner(System.in);
 
 
