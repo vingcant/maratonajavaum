@@ -6,11 +6,12 @@ public class Pessoa {
 
     public Pessoa(String nome) {
         this.nome = nome;
-        ;
+
     }
 
     public void imprime() {
         System.out.println(this.nome);
+
         if (emprego != null) {
             System.out.println(emprego.getNome());
         }
