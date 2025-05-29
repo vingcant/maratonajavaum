@@ -3,7 +3,7 @@
 * Não há muito o que falar, é somente o algoritmo main que vai executar o programa.
 
 
-* **Adendo:** Como visto no README das classes, aqui se tem muito a presença de algoritmo repetido, portanto não vejo necessidade
+* **Adendo:** Como visto no README de dominio, aqui se tem muito a presença de algoritmo repetido, portanto não vejo necessidade
 de explicar cada uma, ponto por ponto, visto que só destrinchar uma delas já é o suficiente pra entender as outras.
 ---
 ### 
