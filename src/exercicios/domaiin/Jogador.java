@@ -12,7 +12,7 @@ public class Jogador extends Pessoa {
 
     @Override
     public String toString() {
-        return "Nome do jogador: " + this.nome + "\nIdade do jogador: " + this.idade + "\nTime: " + time.getNome() + "\nSeu quarto será: " + this.chave;
+        return "Nome do jogador: " + this.nome + "\nIdade do jogador: " + this.idade + "\nTime: " + this.time.getNome() + "\nSeu quarto será: " + this.chave;
     }
 
 

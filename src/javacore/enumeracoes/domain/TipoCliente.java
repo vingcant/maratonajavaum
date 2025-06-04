@@ -5,17 +5,17 @@ public enum TipoCliente {
     PESSOA_JURIDICA(2,"Pessoa Jurídica");
     //Obrigatoriamente a criação do atributo vem após as enumerações
     public final int VALOR;
-    public final String nomeRelato;
+    public final String NOME_RELATO;
 
     TipoCliente(int valor, String nomeRelato){
         this.VALOR = valor;
-        this.nomeRelato = nomeRelato;
+        this.NOME_RELATO = nomeRelato;
     }
 
 
     public static TipoCliente tipoClienteNR(String nomeRelato) {
         for (TipoCliente tipoCliente : values()) {
-            if (tipoCliente.getNomeRelato().equals(nomeRelato)) {
+            if (tipoCliente.getNOME_RELATO().equals(nomeRelato)) {
                 return tipoCliente;
             }
         }return null;
@@ -25,7 +25,7 @@ public enum TipoCliente {
         return VALOR;
     }
 
-    public String getNomeRelato() {
-        return nomeRelato;
+    public String getNOME_RELATO() {
+        return NOME_RELATO;
     }
 }

@@ -4,21 +4,19 @@ import java.sql.SQLOutput;
 
 public class Pessoa {
     protected String nome;
+    protected int idade;
     protected String cpf;
     protected Endereco endereco;
 
-    static{
-        System.out.println("Dentro Bloco Static pEssoa");
-    }
-    {
-        System.out.println("Bloco normal ");
-    }
-    {
-        System.out.println("Bloco normal 2");
-    }
+
     public Pessoa (String nome){
         System.out.println("Dentro do const Pessoa");
         this.nome = nome;
+    }
+
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
     }
 
     public void imprime() {
