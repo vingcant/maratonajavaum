@@ -8,6 +8,16 @@ public class Base extends Calcular {
     protected double peso;
     protected double altura;
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    protected String nome;
+
     public double getPeso() {
         return peso;
     }
