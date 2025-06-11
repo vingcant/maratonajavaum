@@ -31,23 +31,20 @@ public class AnoNascimento extends Base {
         int ano = a;
         int mes = b;
         int dia = c;
-        int calculo;
-        int calculoDois;
-        int calculoTres;
         int anoBase = 2025;
         int mesBase = 6;
         int diaBase = 6;
 
-        calculo = anoBase - ano;
-        calculoDois = mesBase - mes;
-        calculoTres = diaBase - dia;
+        int calculo = anoBase - ano;
+        int calculoDois = mesBase - mes;
+        int calculoTres = diaBase - dia;
 
         if(calculoTres < 0){
             calculoDois--;
             calculoTres+=30;
         }
         if(calculoDois < 0){
-            calculoTres--;
+            calculo--;
             calculoDois+=12;
         }
 

@@ -14,9 +14,8 @@ public class LeituraMedia extends BaseArray {
 
         if (calculo >= 7){
             System.out.println("Aluno "+this.getNome()+" teve uma média de "+calculo+" e foi aprovado");
-        }else if (calculo < 7){
+        }else {
             System.out.println("Aluno "+this.getNome()+" teve uma média de "+calculo+" e foi reprovado");
-
         }
     }
 }

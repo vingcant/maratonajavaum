@@ -7,7 +7,7 @@ public class AdditionMult extends Base {
 
     @Override
     public void calcular(){
-        if(this.getA() == this.getB() && this.getB() == this.getA() ){
+        if(this.getA() == this.getB()){
             System.out.println(base = this.getA()+this.getB());
         }else{
             System.out.println(base = this.getA()*this.getB());
