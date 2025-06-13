@@ -9,13 +9,18 @@ public class ClienteTest {
         Cliente cliente = new Cliente("Pauly", TipoCliente.PESSOA_FISICA, TipoPagamento.CREDITO);
         Cliente cliente2 = new Cliente("Pauln", TipoCliente.PESSOA_JURIDICA, TipoPagamento.DEBITO);
 
-        System.out.println(cliente);
-        System.out.println(cliente2);
-        System.out.println(TipoPagamento.DEBITO.calcularDesconto(100));
-        System.out.println(TipoPagamento.CREDITO.calcularDesconto(100));
-        TipoCliente tipoCliente = TipoCliente.valueOf("PESSOA_FISICA");
-        System.out.println(tipoCliente.getNOME_RELATO());
-        TipoCliente tipoCliente1 = TipoCliente.tipoClienteNR("Pessoa Fisica");
-        System.out.println(tipoCliente1.getNOME_RELATO());
+        try{
+            System.out.println(cliente);
+            System.out.println(cliente2);
+            System.out.println(TipoPagamento.DEBITO.calcularDesconto(100));
+            System.out.println(TipoPagamento.CREDITO.calcularDesconto(100));
+            TipoCliente tipoCliente = TipoCliente.valueOf("PESSOA_FISICA");
+            System.out.println(tipoCliente.getNOME_RELATO());
+            TipoCliente tipoCliente1 = TipoCliente.tipoClienteNR("Pessoa Fisica");
+            System.out.println(tipoCliente1.getNOME_RELATO());
+        }catch (NullPointerException e){
+            e.printStackTrace();
+            System.out.println("Sem objeto referenciado");
+        }
     }
 }
