@@ -13,6 +13,7 @@ public class PatternMatcherTest05 {
         // \W = tudo que não estiver no \w
         //[] procura todas os caracteres dentro desse range
         //^ > procura pelo começo [^] > funciona como negação
+        //. permite qualquer coisa
 
         String regex = "([a-zA-Z0-9\\._])+@([a-zA-Z])+(\\.([a-zA-Z])+)+";
         String text = "paulx@gmail.com, pauly@hotmail.com, pauli!!@hotmail.br";
