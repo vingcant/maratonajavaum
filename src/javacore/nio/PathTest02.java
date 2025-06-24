@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 
 public class PathTest02 {
     public static void main(String[] args) {
-        Path archive = Paths.get("archive");
+        Path archive = Paths.get("archives");
 
     }
 }
