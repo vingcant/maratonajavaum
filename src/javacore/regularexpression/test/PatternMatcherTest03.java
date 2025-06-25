@@ -14,7 +14,7 @@ public class PatternMatcherTest03 {
         //[] procura todas os caracteres dentro desse range
         String regex = "0[xX][0-9a-fA-F]";
 //        String text = "é mafia";
-        String text2 = "8456 4x xx0 xX45 x84F 0x54F 0xF844F5G";
+        String text2 = "8456 4x xx0 xXd45 x84F 0x54F 0xF844F5G";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text2);
         System.out.println("text: "+text2);
