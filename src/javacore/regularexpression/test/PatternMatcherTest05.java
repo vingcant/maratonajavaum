@@ -12,11 +12,11 @@ public class PatternMatcherTest05 {
         // \w = letras de a-Z, dígitos e _
         // \W = tudo que não estiver no \w
         //[] procura todas os caracteres dentro desse range
-        //^ > procura pelo começo [^] > funciona como negação
+        //^ > procura pelo começo [^] > funciona como negação, termina
         //. permite qualquer coisa
 
         String regex = "([a-zA-Z0-9\\._])+@([a-zA-Z])+(\\.([a-zA-Z])+)+";
-        String text = "paulx@gmail.com, pauly@hotmail.com, pauli!!@hotmail.br";
+        String text = "paulx@gmail.c,om, pauly@hotmail.com, pauli!!@hotmail.br";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
         System.out.println("text: "+text);

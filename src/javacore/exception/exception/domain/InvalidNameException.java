@@ -7,6 +7,7 @@ public class InvalidNameException extends Exception{
         super("Invalid username");
     }
 
+
     public InvalidNameException(String message){
         super(message);
     }
